@@ -23,9 +23,16 @@ public class Gui extends JFrame {
         answerField.setEditable(false);
         answerField.setHorizontalAlignment(JTextField.RIGHT);
         /**
-         * Creating buttons and adding their corresponding actions
+         * Calling initialisation method
          */
 
+        init();
+    }
+
+    public void init() {
+        /**
+         * Creating buttons and adding their corresponding actions
+         */
         buttonOne one = new buttonOne();
         one.addActionListener(new buttonOneAction(this));
 
@@ -120,6 +127,7 @@ public class Gui extends JFrame {
 
         this.setContentPane(contentPanel);
     }
+
 
     public String getTemp1() {
         return temp1;
