@@ -12,5 +12,6 @@ public class Main {
         g.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         g.setVisible(true);
         g.setResizable(false);
+        g.setLocationRelativeTo(null);
     }
 }
